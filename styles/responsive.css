@@ -1,0 +1,140 @@
+/****************^     Tablets ************************/
+@media only screen and (max-width:768px) {
+    body {
+        background: linear-gradient(180deg, #FFF 0%, #F0F1FF 100%);
+    }
+    
+    header,main,footer {
+        padding-inline:39px;
+    }
+
+    .logo-dark, .logo-white {
+        display: none;
+    }
+    .logo-white-tablet,.logo-dark-tablet {
+        display: inline;
+    }
+    
+    header .header-btn {
+        
+        padding: 9px 24px 11px;
+        font-size: var(--BodyS);
+    }
+    .introduction {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .introduction h1 {
+        font-size: var(--HeadingL);
+    }
+    .introduction  .introduction-description {
+
+        font-size: var(--BodyS);
+        line-height: 26px;
+        margin-top: 0;
+    }
+    .introduction  .introduction-btn {
+        
+        padding: 15px 37px;
+        font-size: var(--BodyS);
+        line-height: 26px;
+        margin-top: 0;
+    }
+
+    .hero > .hero-desktop {
+        display: none;
+    }
+    .hero > .hero-tablet {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .courses-container {
+
+        grid-template-columns: 1fr 1fr;
+        margin-block: 186px 86px;
+        gap: 56px 10px;
+    }
+    .courses-container > .course-cards {
+
+        padding: 56px 21px 32px 32px;
+        gap: 0;
+
+    }
+    .card1 h2 {
+
+        font-size: var(--HeadingS);
+        line-height: 32px;
+        padding: 56px 21px 139px 32px;
+    }
+    .course-cards h3  {
+
+        font-size: 20px;
+    }
+    .course-cards p  {
+
+        font-size: var(--BodyS);
+        line-height: 26px;
+        margin-block: 16px 24px;
+    }
+    footer {
+        padding-block: 36px;
+    }
+
+    footer .footer-btn {
+
+        padding: 9px 24px 11px;
+        font-size: var(--BodyS);
+    }
+}
+
+
+/*********     mobiles ************/
+@media only screen and (max-width:576px) {
+
+    header, main, footer {
+        padding-inline:16px;
+    }
+    header {
+        padding-block: 16px 0;
+    }
+    .introduction-container {
+        grid-template-columns: 1fr;
+        row-gap: 46px;
+    }
+    .introduction {
+        margin-top: 38px;
+    }
+    .hero > .hero-tablet {
+        display: none;
+    }
+    .hero > .hero-mobile {
+
+        display: block;
+        width: 100%;
+    }
+    .hero {
+        padding-inline: 8px;
+    }
+
+    .courses-container {
+
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+        margin-block:0 80px;
+        padding-top: 11px;
+    }
+
+    .card1 h2 {
+        padding: 24px 29px 32px 28px;
+    }
+
+    .courses-container > .course-cards {
+        
+        padding-inline: 28px 29px;
+    }
+}

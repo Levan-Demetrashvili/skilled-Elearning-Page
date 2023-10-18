@@ -1,0 +1,209 @@
+@import url('variable.css');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+ /* !   global styles */
+
+* {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+ 
+}
+/** header ***/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 165px;
+   
+}
+header  .header-btn {
+
+    padding: 14px 31px 14px 32px;
+
+    color: #FFF;
+    font-size: var(--BodyM);
+    font-weight: 700;
+    line-height: 28px;
+
+    background-color: var(--black);
+    border-radius: 28px;    
+    cursor: pointer;
+}
+.logo-dark-tablet {
+    display: none;
+}
+/** main**/
+main {
+    padding-inline: 165px;
+}
+
+/*^ .introduction */
+
+.introduction-container {
+
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   justify-items: center;
+}
+
+.introduction {
+
+   margin-top: 160px;
+   max-width: 457px;
+}
+
+.introduction h1 {
+    font-size: var(--HeadingXL);
+    color: var(--black);
+    font-weight: 800;
+}
+.introduction  .introduction-description {
+
+    color: var(--gray);
+    font-size: var(--BodyM);
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 29px;
+}
+.introduction .introduction-btn {
+
+    width: fit-content;
+    padding: 19px 31px 16px 32px;
+    margin-top: 40px;
+
+    color: #FFF;
+    font-size: var(--BodyM);
+    font-weight: 700;
+    line-height: 28px;
+
+    background: var(--Gradient-1, linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%));
+    border-radius: 31.5px;    
+    cursor: pointer;
+}
+
+/*?  intro image*/
+.hero > .hero-desktop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.hero >  .hero-tablet {
+    display: none;
+}
+.hero > .hero-mobile {
+    display: none;
+}
+
+/*^ courses  */
+
+.courses-container {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-block: 226px 140px;
+    gap: 80px 30px;
+    padding-top: 24px;
+}
+
+.courses-container > .course-cards {
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    border-radius: 15px;
+    background: var(--FFFFFF, #FFF);
+    box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+    padding: 64px 32px 40px 32px;
+
+}
+.card1 {
+    border-radius: 15px;
+    background: var(--Gradient-1, linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%));
+}
+.card1 h2 {
+    padding: 64px 32px 138px 32px;
+    font-size: var(--HeadingM);
+    color: #FFF;
+    font-weight: 800;
+    line-height: 40px;
+}
+.course-cards img {
+    position: absolute;
+    top: -24px;
+}
+.course-cards h3 {
+
+    font-size: var(--HeadingS);
+    color: var(--black);
+    font-weight: 800;
+} 
+
+.course-cards p {
+
+    font-size: var(--BodyM);
+    color: var(--gray);
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.course-cards  a{
+
+    color: var(--pink);
+    font-size: var(--BodyM);
+    font-weight: 700;
+    line-height: 28px;
+    cursor: pointer;
+} 
+
+/**footer styles**/
+
+footer {
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 165px;
+}
+footer  .footer-btn {
+   
+
+    border-radius: 28px;
+    background: linear-gradient(180deg,#4851FF -54.32%, #F02AA6 100%);
+    padding: 14px 32px;
+
+    color: #FFF;
+    font-size: var(--BodyM);
+    font-weight: 700;
+    line-height: 28px;
+    cursor: pointer;
+} 
+
+.logo-white-tablet {
+    display: none;
+}
+
+/* ^ buttons anim  */
+
+header .header-btn:hover {
+
+    background: var(--666CA3, #666CA3); 
+}
+.introduction .introduction-btn:hover {
+
+ 
+    background: var(--Gradient-1-Hover, linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%));
+}
+footer .footer-btn:hover {
+
+
+    background: var(--Gradient-2-Hover, linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%));
+
+}
+
+.course-cards  a:hover {
+    color: var(--lightpink, #FFA7C3); 
+}
